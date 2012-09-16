@@ -1,0 +1,27 @@
+[user]
+    email = QXiao@bainainfo.com
+    name = QiXiao
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[core]
+    repositoryformatversion = 0
+    autocrlf = false
+    whitespace = trailing-space,space-before-tab,indent-with-non-tab
+    pager = less -FRSX
+    editor = vi
+    hideDotFiles = dotGitOnly
+    fileMode = false
+[alias]
+    graph = log --graph --oneline --decorate --all
+    graph-detail = log --graph --decorate --all
+    pick = cherry-pick
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    pm = push origin HEAD:refs/for/master
